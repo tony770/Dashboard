@@ -25,6 +25,10 @@ body {
     margin-left: 10px;
 }
 
+.branding {
+    margin-top: 40px;
+}
+
 
 .header {
     grid-column: 2/3;
@@ -40,6 +44,7 @@ body {
     grid-template-columns:  2fr repeat(2, 1fr);
     grid-column: 1/3;
     grid-row: 1/2;
+    background-color: rgb(223, 175, 175);
 }
 
 .bottom-header {
@@ -95,3 +100,15 @@ body {
     grid-row: 2/3;
 }
 
+img {
+    width: 25px;
+}
+
+.dashboard-icon {
+    width: 35px;
+}
+
+.iconText {
+    display: flex;
+    margin-left: 30px;
+}
