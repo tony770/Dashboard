@@ -100,6 +100,7 @@ body {
     display: flex;
     justify-content: right;
     gap: 30px;
+    margin-right: 10px;
 }
 
 .side-pfp {
@@ -128,11 +129,29 @@ body {
     border-radius: 50%;
 }
 
+.greetings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.greet {
+    font-size: 18px;
+    margin: 0;
+}
+
+.main-username {
+    font-size: 28px;
+    margin: 0;
+    padding-top: 10px;
+}
+
 .post-btns-container {
     display: flex;
     justify-content: right;
     gap: 30px;
     align-items: center;
+    
 }
 
 .post-btn{
@@ -147,22 +166,24 @@ body {
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: 70% 30%
+    grid-template-columns: 72% 28%;
+    background-color: rgb(212, 205, 205);
 }
 
 .left-content {
     grid-column: 1/2;
-    background-color: blueviolet;
     padding: 10px;
 }
 
 .project-header {
-    margin-left: 10px;
+    margin-left: 30px;
+
 }
 
 .project-post {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 20px;
 }
 
 .post {
@@ -172,17 +193,54 @@ body {
     width: 300px;
     height: 200px;
     justify-content: center;
-    margin: 10px;
+    margin: 0 8px 16px;
     padding-left: 20px;
+    border-radius: 10px;
 }
 
 .right-content {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    padding: 10px;
 }
+
 
 .announce-container {
     grid-row: 1/2;
+}
+
+.announce-post-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    height: auto;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.announce-post {
+    height: 100px;
+    margin: 15px;
+    overflow: auto;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;
+}
+
+.announce-post h4 {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.announce-post p {
+    margin-top: 0;
+}
+
+
+.divider {
+    width: 100%;
+    background-color: rgb(185, 184, 184);
+    height: 1px;
 }
 
 .trend-container {
