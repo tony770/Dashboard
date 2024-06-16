@@ -7,7 +7,7 @@ body {
 .main {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 18% 82%;
     height: 100%;
     width: 100%;
 }
@@ -29,6 +29,10 @@ body {
     margin-top: 40px;
 }
 
+.iconText {
+    display: flex;
+    margin-left: 30px;
+}
 
 .header {
     grid-column: 2/3;
@@ -201,7 +205,7 @@ body {
 .right-content {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    padding: 10px;
+    padding: 0px;
 }
 
 
@@ -214,20 +218,21 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 300px;
-    height: auto;
+    height: 350px;
     padding: 0 10px;
     border-radius: 10px;
 }
 
 .announce-post {
     height: 100px;
-    margin: 15px;
+    padding: 12px;
     overflow: auto;
     scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none;
 }
 
 .announce-post h4 {
+    margin-top: 10px;
     margin-bottom: 0;
     font-size: 18px;
 }
@@ -245,6 +250,7 @@ body {
 
 .trend-container {
     grid-row: 2/3;
+    background-color: red;
 }
 
 .sidebar img {
@@ -255,7 +261,31 @@ body {
     width: 35px;
 }
 
-.iconText {
+.trend-post-container {
+    background-color: white;
     display: flex;
-    margin-left: 30px;
+    flex-direction: column;
+    max-width: 300px;
+    height: 280px;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.trend-pfp {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.trend-post {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    gap: 10px;
+}
+
+.trend-post div h5,
+.trend-post div p{
+    margin: 0;
 }
