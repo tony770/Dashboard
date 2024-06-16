@@ -2,11 +2,12 @@ body {
     padding: 0;
     margin: 0;
     height: 100vh;
+    font-family: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
 }
 
 .main {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 18% 82%;
     height: 100%;
     width: 100%;
@@ -16,17 +17,24 @@ body {
     display: grid;
     grid-column: 1/2;
     grid-row: 1/3;
-    background-color: lightblue;
+    background-color: rgb(22, 134, 172);
     grid-template-rows: 10% 30% 50%;
 }
 
 .sidebar p,
 .sidebar h1 {
     margin-left: 10px;
+    color: white;
+}
+
+.sidebar p {
+    font-size: 25px;
+    margin: 13px;
+    padding-left: 5px;
 }
 
 .branding {
-    margin-top: 40px;
+    margin-top: 120px;
 }
 
 .iconText {
@@ -34,10 +42,22 @@ body {
     margin-left: 30px;
 }
 
+.nav svg,
+.branding svg {
+    width: 30px;
+    fill: white;
+}
+
+.dashboard-icon {
+    width: 35px;
+    fill: white;
+}
+
+
 .header {
     grid-column: 2/3;
     grid-row: 1/2;
-    background-color: bisque;
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -65,7 +85,7 @@ body {
 
 .search-btn {
     border: none;
-    margin: 0;
+    margin-top: 5px;
     padding: 0;
     background: none;
     width: 30px;
@@ -74,7 +94,8 @@ body {
 
 #search-input {
     width: 100%;
-    padding: 4px;
+    height: 40px;
+    padding: 10px;
     border-radius: 20px;
     border: 2px solid #cfcaca;
     background-color: #cfcaca;
@@ -103,8 +124,13 @@ body {
 .side-pf-container {
     display: flex;
     justify-content: right;
+    align-items: center;
     gap: 30px;
     margin-right: 10px;
+}
+
+.side-username {
+    font-size: 20px;
 }
 
 .side-pfp {
@@ -131,6 +157,7 @@ body {
     height: 80px;
     object-fit: cover;
     border-radius: 50%;
+    padding-bottom: 15px;
 }
 
 .greetings {
@@ -155,7 +182,6 @@ body {
     justify-content: right;
     gap: 30px;
     align-items: center;
-    
 }
 
 .post-btn{
@@ -164,6 +190,10 @@ body {
     height: 40px;
     border: none;
     background-color: aqua;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 3px;
 }
 
 .content {
@@ -172,6 +202,7 @@ body {
     display: grid;
     grid-template-columns: 72% 28%;
     background-color: rgb(212, 205, 205);
+    box-shadow: inset black 0 10px 15px -15px;
 }
 
 .left-content {
@@ -181,7 +212,6 @@ body {
 
 .project-header {
     margin-left: 30px;
-
 }
 
 .project-post {
@@ -192,14 +222,47 @@ body {
 
 .post {
     display: flex;
-    flex-direction: column;
     background-color: white;
     width: 300px;
     height: 200px;
     justify-content: center;
     margin: 0 8px 16px;
-    padding-left: 20px;
     border-radius: 10px;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.color-bar {
+    width: 5%;
+    border-radius: 10px 0 0 10px;
+    background-color: rgb(80, 187, 229);
+    margin-right: 15px;
+}
+
+.socialBtn-container {
+    display: flex;
+    justify-content: right;
+    margin-right: 15px;
+    gap: 15px;
+    margin-top: 60px;
+}
+
+.socialBtn-container svg{
+    width: 25px;
+}
+
+.post h4 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.post p {
+    margin-top: 0;
+    padding-right: 10px;
+    margin-bottom: 0;
 }
 
 .right-content {
@@ -254,13 +317,6 @@ body {
     margin-top: 15px;
 }
 
-.sidebar img {
-    width: 25px;
-}
-
-.dashboard-icon {
-    width: 35px;
-}
 
 .trend-post-container {
     background-color: white;
