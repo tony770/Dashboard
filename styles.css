@@ -204,8 +204,8 @@ body {
 
 .right-content {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    padding: 0px;
+    grid-template-rows: 50% 50%;
+    padding-top: 10px;
 }
 
 
@@ -218,7 +218,7 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 300px;
-    height: 350px;
+    height: 330px;
     padding: 0 10px;
     border-radius: 10px;
 }
@@ -226,7 +226,7 @@ body {
 .announce-post {
     height: 100px;
     padding: 12px;
-    overflow: auto;
+    overflow: scroll;
     scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none;
 }
@@ -239,6 +239,7 @@ body {
 
 .announce-post p {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 
@@ -250,7 +251,7 @@ body {
 
 .trend-container {
     grid-row: 2/3;
-    background-color: red;
+    margin-top: 15px;
 }
 
 .sidebar img {
@@ -283,9 +284,11 @@ body {
     height: 80px;
     align-items: center;
     gap: 10px;
+    padding-left: 20px;
 }
 
 .trend-post div h5,
 .trend-post div p{
     margin: 0;
+    font-size: 17px;
 }
